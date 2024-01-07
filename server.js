@@ -66,7 +66,7 @@ app.post('/api/notes', (req, res) => {
             )
         );
 
-        // send status of a successful post and the content of the note added
+        // send status indicating a successful post and the content of the note added
         res.status(201).json(newNote);
     } else {
         // log an error if required properties are not present
@@ -92,15 +92,16 @@ app.delete('/api/notes/:id', (req, res) => {
                     `Note ${req.params.id} has been deleted.`
                 )
         );
-
+        // send status indicating a successful delete and return the id
         res.status(204).json(req.params.id);
     } else {
+        // log an error if required properties are not present
         res.status(500).json("No note found with the selected id");
     }
     
 });
 
-// listen() method is responsible for listening for incoming connections on the specified port
+// liaten for incoming connections on the specified port and log which port is being used
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);
 });
