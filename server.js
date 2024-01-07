@@ -10,7 +10,7 @@ const fs = require('fs');
 const notes = require('./db/db.json');
 
 // specify which port Express.js server will run on
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 // app variable initialized and set to express()
 const app = express();
