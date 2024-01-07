@@ -2,6 +2,7 @@
 ## Description
 A note-taking web application that saves, creates, clears, and deletes notes.
 ![Gif of creatign/clearing/saving/deleting notes](Note_Taker.gif)
+[Deployed Application](https://dianamariedischer-note-taker-7f88d1ab8cf0.herokuapp.com/notes)
 ## Table of Contents
 *[Usage](#usage)  
 *[Contributors](#contributors)  
